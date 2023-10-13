@@ -1,9 +1,11 @@
-import Footer from '@/components/Footer';
-import HeaderNav from '@/components/HeaderNav';
-import Image from 'next/image';
-import Link from 'next/link';
+// pages/Products.tsx
 
-export default function Home() {
+import HeaderNav from '@/components/HeaderNav';
+import Footer from '@/components/Footer';
+import Image from 'next/image';
+
+export default function ProductsList() {
+  // Define your products data
   const products = [
     {
       id: 1,
@@ -30,10 +32,14 @@ export default function Home() {
   ];
 
   return (
-    <div className="container mx-auto p-4 min-h-screen">
-      <section className="text-center py-12">
-        <h2 className="text-3xl font-semibold">Welcome to Dirt Bike E-Commerce</h2>
-        <p className="text-gray-600 mt-4">Your one-stop shop for high-performance dirt bikes.</p>
+    <div className="container mx-auto p-4 min-h-screen space-y-10">
+      <section className="text-center mt-12">
+        <h3 className="text-2xl font-semibold">Why Choose Our Dirt Bikes?</h3>
+        <p className="text-gray-600 mt-4">
+          Our dirt bikes are designed for performance and durability, ensuring you can conquer any
+          terrain with ease. With features like powerful engines, rugged frames, and comfortable
+          seating, our bikes are the perfect companions for your outdoor adventures.
+        </p>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
