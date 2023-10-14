@@ -19,12 +19,12 @@ export default function PaymentForm() {
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-lg max-w-2xl">
-      <h2 className="text-2xl font-semibold mb-4">Payment Information</h2>
+      <h2 className="text-4xl font-bold text-blue-600 mb-4">Payment Information</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label
             htmlFor="cardNumber"
-            className="text-sm font-semibold block"
+            className="text-lg font-semibold block"
           >
             Card Number
           </label>
@@ -39,7 +39,7 @@ export default function PaymentForm() {
         <div className="mb-4">
           <label
             htmlFor="name"
-            className="text-sm font-semibold block"
+            className="text-lg font-semibold block"
           >
             Cardholder&apos;s Name
           </label>
@@ -54,7 +54,7 @@ export default function PaymentForm() {
         <div className="mb-4">
           <label
             htmlFor="billingAddress"
-            className="text-sm font-semibold block"
+            className="text-lg font-semibold block"
           >
             Billing Address
           </label>
@@ -69,7 +69,7 @@ export default function PaymentForm() {
         <div className="mb-4">
           <label
             htmlFor="paymentMethod"
-            className="text-sm font-semibold block"
+            className="text-lg font-semibold block"
           >
             Payment Method
           </label>
@@ -88,7 +88,7 @@ export default function PaymentForm() {
           <div className="w-1/2 mr-2">
             <label
               htmlFor="expiryDate"
-              className="text-sm font-semibold block"
+              className="text-lg font-semibold block"
             >
               Expiry Date
             </label>
@@ -103,7 +103,7 @@ export default function PaymentForm() {
           <div className="w-1/2 ml-2">
             <label
               htmlFor="cvv"
-              className="text-sm font-semibold block"
+              className="text-lg font-semibold block"
             >
               CVV
             </label>
@@ -119,7 +119,7 @@ export default function PaymentForm() {
 
         <button
           type="submit"
-          className="bg-black text-white font-semibold py-2 px-4 rounded hover:bg-black/90"
+          className="bg-blue-600 text-white font-semibold py-3 px-6 rounded hover:bg-blue-800 transition-colors duration-300"
         >
           Pay Now
         </button>
